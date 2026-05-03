@@ -62,3 +62,17 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #E91E63;
 }
+
+/* Normalize date inputs to match text inputs */
+input[type="date"] {
+  appearance: none;
+  -webkit-appearance: none;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+.dark input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}

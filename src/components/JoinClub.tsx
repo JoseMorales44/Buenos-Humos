@@ -249,7 +249,7 @@ export function JoinClub() {
                 <input id="join-birthdate" type="date" value={birthDate}
                   onChange={(e) => { setBirthDate(e.target.value); if (errors.birthDate) setErrors(prev => { const n = { ...prev }; delete n.birthDate; return n }) }}
                   aria-invalid={!!errors.birthDate}
-                  className={`${inputClass} ${errors.birthDate ? 'border-pink-500' : ''}`}
+                  className={`${inputClass} h-[52px] ${errors.birthDate ? 'border-pink-500' : ''}`}
                 />
                 {errors.birthDate && <p className="mt-2 text-sm font-bold text-pink-600 dark:text-pink-400" role="alert">{errors.birthDate}</p>}
               </div>
