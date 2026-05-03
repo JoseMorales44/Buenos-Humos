@@ -212,3 +212,10 @@ export const VolumeMute = (props: IconProps) => (
     <line x1="17" x2="23" y1="9" y2="15" />
   </IconWrapper>
 )
+
+export const Send = (props: IconProps) => (
+  <IconWrapper {...props}>
+    <path d="m22 2-7 20-4-9-9-4z" />
+    <path d="M22 2 11 13" />
+  </IconWrapper>
+)

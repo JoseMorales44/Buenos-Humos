@@ -4,6 +4,7 @@ import { AutocultivoSection } from './components/AutocultivoSection'
 import { CartButton } from './components/CartButton'
 import { CbdSection } from './components/CbdSection'
 import { CategoryGrid } from './components/CategoryGrid'
+import { ChatWidget } from './components/ChatWidget'
 import { EventPromoPopup } from './components/EventPromoPopup'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
@@ -32,6 +33,7 @@ function App() {
         </main>
         <Footer />
         <RadioPlayer />
+        <ChatWidget />
         <CartButton />
         <EventPromoPopup />
       </div>
