@@ -56,7 +56,7 @@ export function Header() {
       <header className="fixed top-0 left-0 right-0 z-40 bg-white dark:bg-black border-b-4 border-black dark:border-white transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <h2 className="logo-texto text-3xl font-black uppercase text-black dark:text-white tracking-tighter">
+            <h2 className="logo-texto text-[20px] sm:text-1xl md:text-2xl lg:text-3xl font-black uppercase text-black dark:text-white tracking-tighter">
               BUENOS HUMOS
             </h2>
           </div>
