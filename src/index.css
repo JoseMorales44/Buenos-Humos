@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Instagram reels strip: seamless loop (two identical halves → translate -50%) */
+  .instagram-marquee-track {
+    display: flex;
+    width: max-content;
+    will-change: transform;
+    animation: instagram-marquee-scroll var(--instagram-marquee-duration, 50s) linear infinite;
+    backface-visibility: hidden;
+  }
+  .instagram-marquee-track:hover {
+    animation-play-state: paused;
+  }
+  @keyframes instagram-marquee-scroll {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .instagram-marquee-track {
+      animation: none;
+    }
+  }
+}
+
+@layer utilities {
+  .text-stroke-black {
+    -webkit-text-stroke: 2px black;
+  }
+  .dark .text-stroke-black {
+    -webkit-text-stroke: 2px white;
+  }
+  .text-stroke-white {
+    -webkit-text-stroke: 2px white;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border: 2px solid #fff;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #fff;
+  border: 2px solid #000;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E91E63;
+}

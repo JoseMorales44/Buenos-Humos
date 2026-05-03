@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+
+# Build (Vite)
+dist
+dist-ssr
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Vite cache (explicit; also under node_modules)
+node_modules/.vite
+
+# TypeScript
+*.tsbuildinfo
+
+# Testing / coverage
+coverage
+.nyc_output
+
+# Editor
+.idea
+*.swp
+*.swo
+.vscode/*
+!.vscode/extensions.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backups
+*.bak
+*~
