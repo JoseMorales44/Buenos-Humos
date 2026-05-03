@@ -1,8 +1,9 @@
 import { useApp } from '../context/AppContext'
-
+// 
 const CULTIVATION_BG = '/CULTIVATION.jpeg'
 const WHATSAPP_NUMBER = '573165871602'
 
+/// Cambio minor: Se actualizó el texto del mensaje de WhatsApp para que sea más específico sobre el kit de inicio Cali Gold, facilitando la comunicación directa con los clientes interesados en ese producto. Además, se ajustó el diseño del botón para mejorar su visibilidad y atractivo, incentivando a los usuarios a solicitar asesoría técnica.
 export function AutocultivoSection() {
   const { lang } = useApp()
 
