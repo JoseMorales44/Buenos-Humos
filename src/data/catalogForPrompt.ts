@@ -1,5 +1,5 @@
-import type { Category } from './categories'
-import { CATEGORIES } from './categories'
+import type { Category } from './categories.js'
+import { CATEGORIES } from './categories.js'
 
 /** Text block appended to Salinas system prompt so the model only names real catalog lines. */
 export function buildCatalogPromptBlock(lang: 'es' | 'en'): string {
