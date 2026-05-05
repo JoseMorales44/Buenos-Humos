@@ -1,6 +1,6 @@
-import { buildCatalogPromptBlock } from '../src/data/catalogForPrompt.ts'
-import { getGroqApiKey } from './groqEnv.ts'
-import { SALINAS_ENGLISH_MODE_SUFFIX, SALINAS_SYSTEM_PROMPT_ES } from './salinasSystemPrompt.ts'
+import { buildCatalogPromptBlock } from '../src/data/catalogForPrompt'
+import { getGroqApiKey } from './groqEnv'
+import { SALINAS_ENGLISH_MODE_SUFFIX, SALINAS_SYSTEM_PROMPT_ES } from './salinasSystemPrompt'
 
 const GROQ_URL = 'https://api.groq.com/openai/v1/chat/completions'
 const MODEL = 'llama-3.3-70b-versatile'
