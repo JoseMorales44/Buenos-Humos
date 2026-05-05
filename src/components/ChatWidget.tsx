@@ -74,7 +74,10 @@ export function ChatWidget() {
         body: JSON.stringify({ messages: apiMessages, lang }),
       })
 
-      if (!res.ok) throw new Error('API error')
+      if (!res.ok) {
+        console.error(`[ChatWidget] API error: ${res.status} ${res.statusText}`)
+        throw new Error('API error')
+      }
 
       const data = await res.json()
       addMessage({ role: 'assistant', content: data.reply })

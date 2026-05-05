@@ -66,6 +66,7 @@ export async function runCultivationChat(
 ): Promise<{ statusCode: number; body: Record<string, unknown> }> {
   const key = getGroqApiKey()
   if (!key) {
+    console.error('[CHAT] GROQ_API_KEY is missing or empty')
     return { statusCode: 500, body: { error: 'server_misconfigured' } }
   }
 
@@ -100,6 +101,7 @@ export async function runCultivationChat(
     })
 
     if (!groqRes.ok) {
+      console.error(`[CHAT] Groq API returned error: ${groqRes.status} ${groqRes.statusText}`)
       return { statusCode: 502, body: { error: 'upstream_error' } }
     }
 
@@ -112,7 +114,8 @@ export async function runCultivationChat(
     }
 
     return { statusCode: 200, body: { reply } }
-  } catch {
+  } catch (err) {
+    console.error('[CHAT] Request to Groq failed:', err)
     return { statusCode: 502, body: { error: 'request_failed' } }
   } finally {
     clearTimeout(timer)
