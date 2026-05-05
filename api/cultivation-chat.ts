@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { runCultivationChat } from '../server/cultivationChatCore'
+import { runCultivationChat } from './_lib/cultivationChatCore'
 
 export const config = { maxDuration: 10 }
 

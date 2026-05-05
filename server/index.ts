@@ -2,7 +2,7 @@ import 'dotenv/config'
 
 import express from 'express'
 
-import { runCultivationChat } from './cultivationChatCore'
+import { runCultivationChat } from '../api/_lib/cultivationChatCore'
 
 const PORT = Number(process.env.PORT) || 8787
 

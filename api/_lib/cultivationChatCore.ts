@@ -1,4 +1,4 @@
-import { buildCatalogPromptBlock } from '../src/data/catalogForPrompt'
+import { buildCatalogPromptBlock } from '../../src/data/catalogForPrompt'
 import { getGroqApiKey } from './groqEnv'
 import { SALINAS_ENGLISH_MODE_SUFFIX, SALINAS_SYSTEM_PROMPT_ES } from './salinasSystemPrompt'
 
